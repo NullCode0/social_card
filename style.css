@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: "inter";
+    background-color: var(--OffBlackColor);
 }
 :root {
     /* Colors */
@@ -14,5 +15,112 @@ body {
     /* font size */
     --FontSizeDefault: 14px;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--DarkColor);
+    margin: 40px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 10px white);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@media (min-width:679px) and (max-width:1990px) {
+    main {
+        width:70%;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
+img {
+    border-radius:50%;
+    border: 2px solid var(--GreyColor);
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.main-title,
+.Address,
+.skill {
+    display: flex;
+    justify-content: center;
+    color: var(--WhiteColor);
+    font-size: var(--FontSizeDefault);
+}
+.title .main-title h1 {
+    font-size: 32px;
+}
+.Address {
+    color: var(--GreenColor);
+}
+.Address h2 {
+    margin-top: -15px;
+    font-size: 18px;
+}
+.skill {
+    font-size: 20px;
+}
+.skill p {
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.752);
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link a {
+    color: var(--WhiteColor);
+    background-color: var(--GreyColor);
+    width: 80%;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 5px rgb(42, 206, 168));
+}
+footer {
+    display: flex;
+    justify-content:center;
+    background-color: var(--GreyColor);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+footer .attribution {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--WhiteColor);
+    font-size: 24px;
+}
+footer .attribution a {
+    text-decoration: none;
+    color: var(--WhiteColor);
+    background-color: var(--DarkColor);
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    margin: 24px;
 
-
+}
+@media (min-width:375px) and (max-width:678px) {
+    footer .attribution  {
+        display: flex;
+        flex-direction: column;
+    }
+}
