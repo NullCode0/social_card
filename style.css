@@ -33,6 +33,10 @@ section {
         width:70%;
         margin: auto;
         margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .section_tow .link a {
+        width: 50%;
     }
 }
 .img {
@@ -106,7 +110,14 @@ footer .attribution {
     align-items: center;
     justify-content: center;
     color: var(--WhiteColor);
-    font-size: 24px;
+    font-size: 20px;
+    margin: 20px;
+}
+footer .attribution .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 footer .attribution a {
     text-decoration: none;
@@ -115,7 +126,8 @@ footer .attribution a {
     border-radius: 10px;
     width: 250px;
     padding: 20px;
-    margin: 24px;
+    margin: 20px;
+    filter: drop-shadow(0 0 5px rgb(102, 180, 151));
 
 }
 @media (min-width:375px) and (max-width:678px) {
@@ -124,3 +136,4 @@ footer .attribution a {
         flex-direction: column;
     }
 }
+
