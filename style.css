@@ -99,10 +99,11 @@ img {
 }
 footer {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     background-color: var(--GreyColor);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    
 }
 footer .attribution {
     width: 100%;
@@ -131,10 +132,22 @@ footer .attribution a {
     filter: drop-shadow(0 0 5px rgb(102, 180, 151));
 
 }
-@media (min-width:375px) and (max-width:678px) {
+@media (min-width:350px) and (max-width:678px) {
     footer .attribution  {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (min-height:1159px) {
+    footer {
+        position:absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    main {
+        margin-top: 90px;
+        margin-bottom: 90px;
     }
 }
 
